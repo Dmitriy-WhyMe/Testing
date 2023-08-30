@@ -1162,7 +1162,7 @@ svg {
     padding: 0;
     position: relative;
     z-index: 1; }
-    .nav .nav__item:hover > ul, .nav .nav__item:focus-within > ul {
+    .nav .nav__item:hover > ul, .nav .nav__item:focus-within > ul, .nav .nav__item:focus > ul {
       -webkit-animation: opacity .6s forwards;
               animation: opacity .6s forwards;
       display: -ms-flexbox;
@@ -1172,7 +1172,7 @@ svg {
       opacity: 1;
       gap: 12px; }
       @media (max-width: 1024px) {
-        .nav .nav__item:hover > ul, .nav .nav__item:focus-within > ul {
+        .nav .nav__item:hover > ul, .nav .nav__item:focus-within > ul, .nav .nav__item:focus > ul {
           position: initial;
           background: none;
           padding: 0;
@@ -1256,6 +1256,7 @@ svg {
       @media (max-width: 1024px) {
         .nav .nav__item .nav__big #menuSubItem1 {
           display: none;
+          left: -1px;
           min-height: 275px;
           top: 75px;
           padding-left: 24px; }
@@ -1264,6 +1265,7 @@ svg {
       @media (max-width: 1024px) {
         .nav .nav__item .nav__big #menuSubItem2 {
           top: 105px;
+          left: -1px;
           padding-left: 24px;
           min-height: 275px; }
           .nav .nav__item .nav__big #menuSubItem2 li {
@@ -1271,6 +1273,7 @@ svg {
       @media (max-width: 1024px) {
         .nav .nav__item .nav__big #menuSubItem3 {
           top: 140px;
+          left: -1px;
           padding-left: 24px;
           min-height: 275px; }
           .nav .nav__item .nav__big #menuSubItem3 li {
@@ -15468,6 +15471,7 @@ a.logo:active, a.logo:focus, a.logo:hover {
         align-items: center; }
     @media (max-width: 1024px) {
       .header__menu {
+        overflow: auto;
         position: fixed;
         left: -285px;
         top: 0;
